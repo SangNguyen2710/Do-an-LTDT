@@ -59,6 +59,7 @@ void read_line_create_graph(const char* line, Graph &graph)
 {
 	int i = 0;
 	Vertex vertex;
+	vertex.passed = false;
 	char dulieu[10];
 	int index_ghi = 0;
 	while (line[i] != ' ')
@@ -92,5 +93,10 @@ void read_line_create_graph(const char* line, Graph &graph)
 	// Sort lại danh sách đỉnh liền kề trước khi đưa đỉnh vào graph.
 
 	std::sort(vertex.dinhlienke.begin(), vertex.dinhlienke.end());
+
+	for (int i = 0; i < vertex.dinhlienke.size(); i++)
+	{
+		vertex.available.push_back(false);
+	}
 	graph.danhsachdinh.push_back(vertex);
 }
