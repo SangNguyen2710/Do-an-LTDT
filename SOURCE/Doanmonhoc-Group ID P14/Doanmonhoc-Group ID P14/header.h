@@ -4,12 +4,13 @@
 #include <string>
 #include <iostream>
 #include <windows.h>
-
+#include <algorithm>
 
 typedef struct Vertex
 {
 public:
 	int name;
+	int level;
 	bool passed;
 	std::vector<int> dinhlienke; 
 	std::vector<bool> available;
@@ -44,6 +45,7 @@ typedef struct Graph
 		{
 			for (int j = 0; j < danhsachdinh[i].dinhlienke.size(); j++)
 			{
+				printf("%d", danhsachdinh[i].level);
 				printf("%d ", danhsachdinh[i].dinhlienke[j]);
 			}
 			printf("\n");
