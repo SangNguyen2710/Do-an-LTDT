@@ -15,5 +15,20 @@ void main()
 	// Lấy path input từ user và ghi dữ liệu vào graph
 	read_file(graph);
 
-	Euler(graph, danhsachcanh, 9);
+	int dinhbatdau;
+	printf("Nhap dinh bat dau: ");
+	scanf_s("%d", &dinhbatdau);
+	int kq = Euler(graph, danhsachcanh, dinhbatdau);
+	if (kq == 1 || kq == 2)
+	{
+		printf("Lo trinh la: \n");
+		for (int i = 0; i < danhsachcanh.size(); i++)
+		{
+			printf("Canh %d - %d \n", danhsachcanh[i].start, danhsachcanh[i].end);
+		}
+	}
+	else
+	{
+		printf("Khong co lo trinh\n");
+	}
 }
