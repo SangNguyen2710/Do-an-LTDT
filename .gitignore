@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/*
+/SOURCE/*
+/SOURCE/Doanmonhoc-Group ID P14/.vs/Doanmonhoc-Group ID P14/v17/Browse.VC.db
+/SOURCE/Doanmonhoc-Group ID P14/.vs/Doanmonhoc-Group ID P14/v17/.suo
+!/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/main.cpp
+!/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/header.h
+!/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/header.cpp
