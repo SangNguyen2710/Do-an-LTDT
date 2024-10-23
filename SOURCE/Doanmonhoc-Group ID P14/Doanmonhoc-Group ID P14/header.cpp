@@ -96,7 +96,7 @@ void read_line_create_graph(const char* line, Graph &graph)
 
 	for (int i = 0; i < vertex.dinhlienke.size(); i++)
 	{
-		vertex.available.push_back(false);
+		vertex.available.push_back(true);
 	}
 	graph.danhsachdinh.push_back(vertex);
 }
