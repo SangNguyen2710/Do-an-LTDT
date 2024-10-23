@@ -1,5 +1,5 @@
 ﻿#include "header.h"
-
+#include "Euler.h"
 
 
 void main()
@@ -12,7 +12,8 @@ void main()
 	std::vector<Edge> danhsachcanh;
 	Graph graph;
 
-
 	// Lấy path input từ user và ghi dữ liệu vào graph
 	read_file(graph);
+
+	Euler(graph, danhsachcanh, 9);
 }

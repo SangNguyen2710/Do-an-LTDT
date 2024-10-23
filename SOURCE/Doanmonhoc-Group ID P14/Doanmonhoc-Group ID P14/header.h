@@ -1,4 +1,5 @@
-﻿#include <stdio.h>
+﻿#pragma once
+#include <stdio.h>
 #include <stdlib.h>
 #include <vector>
 #include <string>
@@ -43,9 +44,9 @@ typedef struct Graph
 	{
 		for (int i = 0; i < danhsachdinh.size(); i++)
 		{
+			printf("%d", danhsachdinh[i].level);
 			for (int j = 0; j < danhsachdinh[i].dinhlienke.size(); j++)
 			{
-				printf("%d", danhsachdinh[i].level);
 				printf("%d ", danhsachdinh[i].dinhlienke[j]);
 			}
 			printf("\n");
