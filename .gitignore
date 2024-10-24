@@ -7,13 +7,7 @@
 /SOURCE/Doanmonhoc-Group ID P14/.vs/Doanmonhoc-Group ID P14/v17/Browse.VC.db
 /SOURCE/Doanmonhoc-Group ID P14/.vs/Doanmonhoc-Group ID P14/v17/.suo
 
-# Bỏ qua mọi thứ trong thư mục SOURCE/
-!/SOURCE/
-!/SOURCE/Doanmonhoc-Group ID P14/
-!/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/
 
-# Bỏ qua tất cả các tệp trong Doanmonhoc-Group ID P14
-/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/*
 
 # Ngoại lệ cho các tệp 
 !/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/main.cpp
