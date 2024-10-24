@@ -1,8 +1,8 @@
 ﻿#include "header.h"
 #include "Euler.h"
+#include "Hamilton.h"
 
-
-void main()
+int main()
 {
 	setlocale(LC_ALL, "en_US.UTF-8");
 	SetConsoleOutputCP(CP_UTF8); 
@@ -17,11 +17,12 @@ void main()
 
 	int dinhbatdau;
 	printf("Nhap dinh bat dau: ");
-	scanf_s("%d", &dinhbatdau);
+	scanf("%d", &dinhbatdau);
+
 	int kq = Euler(graph, danhsachcanh, dinhbatdau);
 	if (kq == 1 || kq == 2)
 	{
-		printf("Lo trinh la: \n");
+		printf("Duong di Euler: \n");
 		for (int i = 0; i < danhsachcanh.size(); i++)
 		{
 			printf("Canh %d - %d \n", danhsachcanh[i].start, danhsachcanh[i].end);
@@ -29,6 +30,19 @@ void main()
 	}
 	else
 	{
-		printf("Khong co lo trinh\n");
+		printf("Khong co duong di Euler\n");
 	}
+
+	std::vector<int> duongdi_hamilton;
+	int kq_h = Hamilton(graph, duongdi_hamilton, dinhbatdau);
+	if (kq_h == 1 || kq_h == 2)
+	{
+		printf("Duong di Hamilton: \n");
+		for (int i = 0; i < duongdi_hamilton.size(); i++)
+			printf("%d \n", duongdi_hamilton[i]);
+	}
+	else
+		printf("Khong co duong di Hamilton\n");
+
+	return 0;
 }
