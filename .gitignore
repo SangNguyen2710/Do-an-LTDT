@@ -2,14 +2,20 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/*
-/SOURCE/*
+# Bỏ qua tất cả thư mục .vs/
+.vs/*
+
+# Bỏ qua tất cả các tệp trong SOURCE/
+# Nhưng trước tiên mở lại thư mục SOURCE/ và các thư mục con cần thiết
+/SOURCE/Doanmonhoc-Group ID P14/*
+!/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14
+/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/*
+
+# Cụ thể bỏ qua thư mục con của .vs/ trong thư mục Doanmonhoc-Group ID P14
 /SOURCE/Doanmonhoc-Group ID P14/.vs/Doanmonhoc-Group ID P14/v17/Browse.VC.db
 /SOURCE/Doanmonhoc-Group ID P14/.vs/Doanmonhoc-Group ID P14/v17/.suo
 
-
-
-# Ngoại lệ cho các tệp 
+# Ngoại lệ cho các tệp mà bạn muốn Git theo dõi
 !/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/main.cpp
 !/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/header.cpp
 !/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/header.h
