@@ -2,7 +2,7 @@
 #include "header.h"
 #include "Hamilton.h"
 
-void run(Graph &graph, std::vector<int> temp_path, int curr_, std::vector<int> path, int* result, int start)
+void run(Graph &graph, std::vector<int> temp_path, int curr_, std::vector<int> &path, int* result, int start)
 {
     // 1 or 2
     if (temp_path.size() == graph.danhsachdinh.size())
@@ -51,7 +51,7 @@ void run(Graph &graph, std::vector<int> temp_path, int curr_, std::vector<int> p
     }
 }
 
-int Hamilton(Graph &graph, std::vector<int> duongdi, int dinhbatdau)
+int Hamilton(Graph &graph, std::vector<int> &duongdi, int dinhbatdau)
 {
     // start
     graph.danhsachdinh[dinhbatdau].passed = true;

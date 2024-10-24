@@ -17,7 +17,7 @@ int main()
 
 	int dinhbatdau;
 	printf("Nhap dinh bat dau: ");
-	scanf("%d", &dinhbatdau);
+	scanf_s("%d", &dinhbatdau);
 
 	int kq = Euler(graph, danhsachcanh, dinhbatdau);
 	if (kq == 1 || kq == 2)
@@ -39,7 +39,7 @@ int main()
 	{
 		printf("Duong di Hamilton: \n");
 		for (int i = 0; i < duongdi_hamilton.size(); i++)
-			printf("%d \n", duongdi_hamilton[i]);
+			printf("%d ", duongdi_hamilton[i]);
 	}
 	else
 		printf("Khong co duong di Hamilton\n");
