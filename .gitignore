@@ -9,6 +9,7 @@
 # Nhưng trước tiên mở lại thư mục SOURCE/ và các thư mục con cần thiết
 /SOURCE/Doanmonhoc-Group ID P14/*
 !/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14
+!/SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14.sln
 /SOURCE/Doanmonhoc-Group ID P14/Doanmonhoc-Group ID P14/*
 
 # Cụ thể bỏ qua thư mục con của .vs/ trong thư mục Doanmonhoc-Group ID P14
