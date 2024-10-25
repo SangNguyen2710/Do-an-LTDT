@@ -44,7 +44,7 @@ typedef struct Graph
 	{
 		for (int i = 0; i < danhsachdinh.size(); i++)
 		{
-			printf("So bac cua dinh la %d	", danhsachdinh[i].level);
+			printf("%d ", danhsachdinh[i].level);
 			for (int j = 0; j < danhsachdinh[i].dinhlienke.size(); j++)
 			{
 				printf("%d ", danhsachdinh[i].dinhlienke[j]);

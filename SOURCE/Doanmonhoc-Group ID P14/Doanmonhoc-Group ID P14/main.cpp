@@ -19,6 +19,7 @@ int main()
 	printf("Nhap dinh bat dau: ");
 	scanf_s("%d", &dinhbatdau);
 
+	// Thuật toán Euler
 	int kq = Euler(graph, danhsachcanh, dinhbatdau);
 	if (kq == 1 || kq == 2)
 	{
@@ -32,7 +33,9 @@ int main()
 	{
 		printf("Khong co duong di Euler\n");
 	}
+	
 
+	//Thuật toán hamilton
 	std::vector<int> duongdi_hamilton;
 	int kq_h = Hamilton(graph, duongdi_hamilton, dinhbatdau);
 	if (kq_h == 1 || kq_h == 2)
