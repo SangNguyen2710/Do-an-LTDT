@@ -39,7 +39,7 @@ typedef struct Graph
 {
 	int tongsodinh;
 	std::vector<struct Vertex>danhsachdinh;
-
+	std::vector<struct Edge>danhsachcanh;
 	void in_dothi()
 	{
 		for (int i = 0; i < danhsachdinh.size(); i++)
@@ -52,9 +52,16 @@ typedef struct Graph
 			printf("\n");
 		}
 	}
+	// Hàm sao chép
+	Graph copy() const {
+		Graph newGraph;
+		newGraph.tongsodinh = this->tongsodinh;
+		newGraph.danhsachdinh = this->danhsachdinh; // Cóp nguyên vecto vertex
+		newGraph.danhsachcanh = this->danhsachcanh; // Cóp nguyên vecto edge
+		return newGraph;
+	}
+
 };
-
-
 
 bool read_file(Graph &graph);
 

@@ -12,15 +12,21 @@ int main()
 	std::vector<Edge> danhsachcanh;
 	Graph graph;
 
+
 	// Lấy path input từ user và ghi dữ liệu vào graph
 	read_file(graph);
+	Graph graph2 = graph;
 
 	int dinhbatdau;
 	printf("Nhap dinh bat dau: ");
 	scanf_s("%d", &dinhbatdau);
 
+
+
+
+	
 	// Thuật toán Euler
-	int kq = Euler(graph, danhsachcanh, dinhbatdau);
+	int kq = Eulerv2(graph, danhsachcanh, dinhbatdau);
 	if (kq == 1 || kq == 2)
 	{
 		printf("Duong di Euler: \n");
@@ -37,7 +43,7 @@ int main()
 
 	//Thuật toán hamilton
 	std::vector<int> duongdi_hamilton;
-	int kq_h = Hamilton(graph, duongdi_hamilton, dinhbatdau);
+	int kq_h = Hamilton(graph2, duongdi_hamilton, dinhbatdau);
 	if (kq_h == 1 || kq_h == 2)
 	{
 		printf("Duong di Hamilton: \n");
