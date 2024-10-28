@@ -43,15 +43,21 @@ int main()
 
 	//Thuật toán hamilton
 	std::vector<int> duongdi_hamilton;
-	int kq_h = Hamilton(graph2, duongdi_hamilton, dinhbatdau);
-	if (kq_h == 1 || kq_h == 2)
+	int kq_h = Hamilton(graph, duongdi_hamilton, dinhbatdau);
+	if (kq_h == 2)
+	{
+		printf("Chu trinh Hamilton: \n");
+		for (int i = 0; i < duongdi_hamilton.size(); i++)
+			printf("%d ", duongdi_hamilton[i]);
+	}
+	else if (kq_h == 1)
 	{
 		printf("Duong di Hamilton: \n");
 		for (int i = 0; i < duongdi_hamilton.size(); i++)
 			printf("%d ", duongdi_hamilton[i]);
 	}
 	else
-		printf("Khong co duong di Hamilton\n");
-
+		printf("Khong co chu trinh va duong di Hamilton\n");
+	
 	return 0;
 }
